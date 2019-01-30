@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+		<title>Bézier Curve Approximation</title>
+		 
+	</head>
+	<body>
+		<script type="text/javascript" src = "graph.js"></script>
+		<script type="text/javascript" src = "BezierCurve.js"></script>
+		<script type="text/javascript" src = "main.js"></script>
+		<div style="float:left; width:50%; padding:0px" id="leftGraphDiv">
+			<h1><span style="color:green">Sine Wave</span> compared with <span style="color:red">Bézier Curve Approximation<span></h1>
+			<canvas id="circleGraph" oncontextmenu="return false" style="width:80%;border-style:solid;border-width:2px;">Canvas not supported</canvas> </br>
+			bézier curve step : <input id="curveStep" type="text" value="0.1"></input>
+			sine step : <input id="sineStep" type="text" value="0.001"></input>
+			
+		</div>
+		<div style="float:left; width:50%; padding:0px" id="rightGraphDiv">
+			
+			magic number <input type="text" value="0.577" id="num" ></input>
+			<h1>Graph of Error</h1>
+			<canvas id="errorGraph" oncontextmenu="return false" style="width:80%;border-style:solid;border-width:2px;">Canvas not supported</canvas>
+			integral step <input type="text" value="0.001" id="integralStep"></input> <br/>
+			integral of error graph (approx.): <span id="integralOfError"></span> <br/>
+			integral of absolute value of error graph (approx.): <span id="absIntegralOfError"></span> <br/> 
+			intergral of square of error graph (approx.): <span id="squareIntegralOfError"></span><br/>
+			<span hidden="hidden">radius error:<input id="radiusError" type="radio" name="errorType" value="0"></input> </span>
+			curvature error:<input id="curvatureError" type="radio" name="errorType" value="1" checked=true></input> 
+			distance error:<input id="distError"  type="radio" name="errorType" value="2"></input> 
+			x axis error:<input id="xAxisError"  type="radio" name="errorType" value="3"></input>
+		</div>
+	</body>
+	
+</html>

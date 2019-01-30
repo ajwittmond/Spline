@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+		<title>Spline tool</title>
+		 
+	</head>
+	<body>
+		<script type="text/javascript" src = "BezierCurve.js"></script>
+		<script type="text/javascript" src = "graph.js"></script>
+		<script type="text/javascript" src = "main.js"></script>
+		<canvas id="graph" oncontextmenu="return false" style="width:1280px;height:720px;border-style:solid;border-width:2px;">Canvas not supported</canvas><br/>
+		step:<input id="step" type="text" value="0.1"></input> k : <input id="k" type="text" value="0.28"></input> 
+		<button id="reset">reset</button> add points: <input id="addpoints" type="checkbox" checked=true></input> 
+		move points:<input id="movePoints" type="checkbox"></input>
+		snapToGrid:<input type="checkbox" id="snapToGrid"></input> scaling grid:<input type="radio" name="grid" checked=true id="scalingGrid"></input> 
+		fixed grid:<input type="radio" name="grid" id="fixedGrid"></input> grid width:<input type="text" id="gridWidth"/> 
+		grid height:<input type="text" id="gridHeight"/>
+	</body>
+	
+</html>
